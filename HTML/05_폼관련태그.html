@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+</head>
+<body>
+    <h1>폼 관련 태그</h1>
+
+    <h3>form 태그</h3>
+    <form method="post" autocomplete="off">
+        <fieldset>
+            <legend>회원 정보 입력</legend>
+                <label for="">아이디 : </label>
+            <input type="text" name="username" id="username" placeholder="아이디를 입력해주세요." autocomplete="off" required="autocomplete">
+
+            <br>
+
+            <label for="password">비밀번호 : </label>
+            <input type="password" name="password" id="password" placeholder="비밀번호를 입력해주세요.">
+
+        </fieldset>
+        <br>
+
+        <input type="submit" value="로그인">
+        <input type="reset" value="초기화">
+
+    </form>
+
+    <h3>input 태그의 type 속성</h3>
+    <h4>type="hidden"</h4>
+    <form>
+        <label for="hidden">안 보임 : </label>
+        <input type="hidden" name="hidden" id="hidden" value="1234">
+        <br><br>
+        <input type="submit" value="전송">
+    </form>
+
+    <h4>type="text|password|search|url|email|tel"</h4>
+    <form>
+        <legend>회원 정보 입력</legend>
+                <label for="">아이디 : </label>
+            <input type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요." autocomplete="off" required="autocomplete"
+            size="40" maxlength="10" value="hong123">
+
+            <br>
+
+            <label for="password">비밀번호 : </label>
+            <input type="password" name="userPwd" id="userPwd" placeholder="비밀번호를 입력해주세요.">
+
+        <br><br>
+
+        <label for="search">검색 : </label>
+        <input type="search" name="search" id="search"
+        placeholder="검색어를 입력해 주세요.">
+
+        <br><br>
+
+        <label for="">홈페이지</label>
+        <input type="url" name="homepage" id="homepage"
+        value="https://">
+
+        <br><br>
+
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요.">
+
+        <br><br>
+
+        <label for="phone">전화번호 : </label>
+        <input type="tel" name="phone" id="phone" placeholder="전화번호를 입력해주세요.">
+
+        <br><br>
+        <input type="submit" value="전송">
+
+    </form>
+
+    <h4>type="number|range"</h4>
+    <form>
+        <label for="amount">수량 : </label>
+        <input type="number" name="amount" id="amount" min="0" max="100" step="1">
+        <br><br>
+        <label for="point">포인트: </label>
+        <input type="range" id="point" name="point">
+        <br><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+
+
+        
+
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
