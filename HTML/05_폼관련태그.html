@@ -88,14 +88,175 @@
         <input type="reset" value="초기화">
 
 
-        
-
-
 
     </form>
 
 
+    <h4>type="color|file"</h4>
+    <!-- <form enctype="multipart/form-data"> -->
+    <form>
+        <label for="color">색상 : </label>
+        <input type="color" name="color" id="color">
 
+        <br><br>
+
+        <label for="uploadFile">파일 : </label>
+        <input type="file" name=""uploadFile id="uploadFile">
+        
+        <br><br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+    <h4>type="radio|checkbox"</h4>
+
+    <form>
+        <fieldset>
+            <legend>성별</legend>
+
+            <input type="radio" name="gender" id="male" value="M" checked>
+            <label for="male">남자</label>
+            
+            <input type="radio" name="gender" id="female" value="F">
+            <label for="female">여자</label>
+            
+
+        </fieldset>
+        <fieldset>
+            <legend>취미</legend>
+
+            <input type="checkbox" name="hobby" id="baseball" value="baseball" checked>
+            <label for="baseball">야구</label>
+
+            <input type="checkbox" name="hobby" id="basketball" value="basketball">
+            <label for="basketball">농구</label>
+
+            <input type="checkbox" name="hobby" id="football" value="football">
+            <label for="football">축구</label>
+        </fieldset>
+        
+        <br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+
+
+    <h4>type="date|month|week|time|datetime-local</h4>
+    <form>
+        <label for="date">date : </label>
+        <input type="date" name="date" id="date" value="2025-09-04">
+        <br><br>
+
+        <label for="month">month : </label>
+        <input type="month" name="month" id="month">
+        <br><br>
+
+        <label for="week">week : </label>
+        <input type="week" name="week" id="week">
+        <br><br>
+
+        <label for="time">time : </label>
+        <input type="time" name="time" id="time">
+        <br><br>
+
+        <label for="datetime-local">datetime-local : </label>
+        <input type="datetime-local" name="datetime-local" id="datetime-local">
+        <br>
+
+        <br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+    <h4>select 태그</h4>
+    <form>
+        <label for="national">국적 : </label>
+        <select name="national" id="national" size="2">
+            <optgroup label="아시아">
+                <option value="kr">한국</option>
+                <option value="ch">중국</option>
+                <option value="jp">일본</option>
+            </optgroup>
+            <optgroup label="기타">
+                <option value="us"label="미국"></option>
+            </optgroup>
+            <option selected>--선택--</option>
+        </select>
+
+
+
+        <br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+    <h4>datalist 태그</h4>
+    <form>
+        <label>
+            색상 : <input type="text" name="color" list="colors">
+        </label>
+
+        <datalist id="colors">
+            <option value="black">검정색</option>
+            <option value="white">흰색</option>
+            <option value="red" label="빨간색"></option>
+        </datalist>
+
+
+        <!-- <datalist id="colors">
+            <option >검정색</option>
+            <option >흰색</option>
+        </datalist> -->
+
+        <!-- <datalist id="colors">
+            <option value="black"></option>
+            <option value="white"></option>
+            <option value="red"></option>
+        </datalist> -->
+
+
+        <br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
     
+
+    </form>
+
+    <h3>기타 폼 태그</h3>
+    <h4> button 태그 </h4>
+    <form>
+        <input type="text" name="username" id="username">
+        <!-- input 태그 사용  -->
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <input type="button" value="button" onclick="alert('button click')">
+        
+        <br>
+        <!-- button 태그 사용 -->
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+        <button type="button" onclick="alert('button!')">button</button>
+    </form>
+
+    <button>전송</button>
+
+    <h4>textarea 태그</h4>
+    <form>
+        <textarea name="textarea" cols="45" rows="15"
+        placeholder="내용 입력 ..." style="resize: none;"></textarea>
+        <br>
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
