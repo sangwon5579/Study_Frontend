@@ -1,0 +1,152 @@
+/* *{
+    color: green;
+} */
+
+
+/* 속성 선택자 */
+/* div[name]{
+    background-color: aquamarine;
+} */
+
+/* div 중 name 속성값이 name1과 일치하는 태그(요소) 선택 */
+div[name=name1]{
+    background-color: antiquewhite;
+}
+
+/* div중 name 속성값이 name1을 포함하는 태그(요소) 선택 */
+/* 단 속성 값이 띄어쓰기로 구분되어 있어야 한다 */
+div[name~=name1]{
+    color:chocolate
+}
+
+/* div 중 class 속성값이 class 이거나 class로 시작되는 태그 */
+/* 단 -로 구분해야한다 */
+div[class |= class]{
+    background-color: blue;
+}
+
+ /* div 중 name 속성값이 name으로 시작되는 태그(요소) 선택 */
+div[name^=name]{
+    color: darkolivegreen;
+}
+
+/* div 중 class 속성값이 class로 끝나는 태그(요소) 선택 */
+div[class $= class]{
+    color: crimson;
+}
+
+/* div 중 name 속성값이 2로 끝나는 태그(요소) 선택 */
+div[name$="2"]{
+    background-color: aquamarine;
+}
+
+/* div 중 class 속성값에 i를 포함하는 태그(요소) 선택 */
+div[class*=i]{
+    color: gold;
+}
+
+
+/* 자식 선택자 / 후손 선택자 */
+#test1>h4{
+    background-color: cyan;
+}
+
+#test1>ul>h4 {
+    color: blue;
+}
+
+#test1>ul>li{
+    color: brown;
+}
+
+#test1 h4{
+    background-color: coral;
+}
+
+#test1 li{
+    background-color: yellow;
+}
+
+/* 형제 선택자 */
+#test2+div{
+    background-color: fuchsia;
+}
+
+#test2~div{
+    color: blue;
+}
+
+/* 반응 선택자 */
+#active-test{
+    background-color: aquamarine;
+    width: 300px;
+    height: 300PX;
+}
+
+#active-test:active{
+    background-color: olivedrab;
+    color: aliceblue;
+}
+
+#hover-test:hover{
+    background-color: rgb(161, 161, 111);
+    color: blueviolet;
+    cursor: pointer;
+    height: 300px;
+}
+
+#userId:focus, #userPwd:focus{
+    outline: none;
+    border: 4px solid red;
+}
+
+/* 상태 선택자 */
+input[type=checkbox]:checked{
+    width: 20px;
+    height: 18px;
+}
+
+input[type=checkbox]:checked+label {
+    font-size: 1.3em;
+}
+
+button:enabled{
+    border: 3px double blue;
+}
+
+button:enabled:active{
+    border:3px solid violet;
+}
+
+button:disabled{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    border: 3px dotted red;
+}
+
+/* 구조 선택자 */
+/* 형제 관계 태그 중 첫번째 태그를 선택 */
+#test3>p:first-child {
+    background-color: aqua;
+}
+
+#test3>p:first-of-type {
+    color:yellowgreen ;
+}
+
+#test3>p:nth-of-type(odd){
+    background-color: blue;
+}
+
+#test3>p:nth-child(odd){
+    background-color: bisque;
+}
+
+/* 부정 선택자 */
+#test4>p:not(.p){
+    background-color: red;
+}
+
+#test4>p:not(:last-child){
+    color: blue;
+}
