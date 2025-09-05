@@ -1,0 +1,88 @@
+/* font-family */
+
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+
+body{
+    font-family: "궁서체";
+}
+
+#ff1{
+    font-family: "궁서체";
+}
+
+#ff2{
+    font-family: "Moirai One", system-ui;
+    font-size: 2em;
+}
+
+#ff3{
+    font-family: "none", "돋움체";
+    font-size: 120%;
+}
+
+/* font-weight */
+#fw2{
+    /* font-weight: 700; */
+    font-weight: bold;
+}
+
+#fw3{
+    font-weight: lighter;
+}
+
+#fw4{
+    font-weight: bolder;
+}
+
+/* font-style */
+#fs1{
+    font-style: italic;
+}
+
+#fs2{
+    font-style: oblique;
+}
+
+/* color */
+#c-name{
+    color: steelblue;
+}
+
+#c-16{
+    color: #44ff22;
+}
+
+#c-rgb{
+    color: rgb(255, 0, 255, 0.2);
+}
+
+#c-hsl{
+    color: hsl(0, 80%, 60%)
+}
+
+/* text-decoration */
+#td1{
+    text-decoration: overline;
+}
+
+#td2{
+    text-decoration: line-through;
+}
+
+#td3{
+    text-decoration: underline;
+}
+
+/* whute-space */
+#whs{
+    border: 1px solid;
+    width: 200px;
+    /* white-space: normal; */
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    white-space: pre-line;
+}
+
+#ws{
+    letter-spacing: 10px;
+}
