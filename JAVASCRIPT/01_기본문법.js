@@ -199,7 +199,7 @@ function forTest(){
     // }
 
     //for in 구문
-    //  - 배열을 반복하는 경우 i 변수에 array의 insex값을 순서대로 담아서 반복한다
+    //  - 배열을 반복하는 경우 i 변수에 array의 index값을 순서대로 담아서 반복한다
     // for(const i in array){
     //     div4.innerHTML += `${array[i]} `;
     // }
