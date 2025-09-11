@@ -93,7 +93,7 @@ window.onload = () => {
         students.push({name: '임꺽정', eng: 90, math:90});
 
         // 배열에 담겨있는 모든 객체에 메소드를 추가
-         students.forEach((student) => {
+        students.forEach((student) => {
             student.getSum = function () {
                 return this.eng + this.math;
             }
