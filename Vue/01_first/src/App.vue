@@ -2,16 +2,21 @@
   <div>
     <h2>Vue.js 기초</h2>
 
-    <Directive1/>
+    <!-- <Directive/> -->
+    <Options/>
   </div>
 </template>
 
 <script>
-  import Directive1 from './components/Directive1.vue';
+  // import Directive from './components/Directive1.vue';
+  import Directive from './components/Directive2.vue';
+  import Options from './components/Options.vue';
+
   export default {
     name: 'App',
     components: {
-      Directive1 //Directive1: Directive1
+      Directive, // Directive: Directive
+      Options // Options: Options
     }
   }
 </script>
